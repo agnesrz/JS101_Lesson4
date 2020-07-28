@@ -1,0 +1,24 @@
+PROBLEM:
+
+Given a string, write a function `palindromeSubstrings` which returns
+all the substrings from a given string which are palindromes. Consider
+palindrome words case sensitive.
+
+Test cases:
+
+palindromeSubstrings("supercalifragilisticexpialidocious") == ["ili"]
+palindromeSubstrings("abcddcbA") == ["bcddcb", "cddc", "dd"]
+palindromeSubstrings("palindrome") == []
+palindromeSubstrings("") == []
+
+
+Input: string
+Output: array of sub-strings (different object)
+Rules:
+  Explicit:
+    -return all the substrings that are pallindromes
+    -pallindrome words are case sensitive
+  Implicit:
+    -if the input is an empty string or if there are no matches, return an empty array
+    -pallindromes within a longer pallindrome should also be returned
+Data type: string, array
